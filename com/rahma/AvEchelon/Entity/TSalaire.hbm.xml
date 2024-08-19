@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generated Jun 13, 2024, 2:26:22 AM by Hibernate Tools 5.6.7.Final --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class catalog="stipdb" name="com.rahma.AvEchelon.Entity.TSalaire" optimistic-lock="none" table="t_salaire">
+        <id name="id" type="java.lang.Integer">
+            <column name="ID"/>
+            <generator class="identity"/>
+        </id>
+        <property name="cat" type="string">
+            <column name="cat"/>
+        </property>
+        <property name="SCat" type="string">
+            <column name="s_cat"/>
+        </property>
+        <property name="th1" type="string">
+            <column name="th1"/>
+        </property>
+        <property name="inddiff1" type="string">
+            <column name="inddiff1"/>
+        </property>
+        <property name="th2" type="string">
+            <column name="th2"/>
+        </property>
+        <property name="inddiff2" type="string">
+            <column name="inddiff2"/>
+        </property>
+        <property name="th3" type="string">
+            <column name="th3"/>
+        </property>
+        <property name="inddiff3" type="string">
+            <column name="inddiff3"/>
+        </property>
+        <property name="th4" type="string">
+            <column name="th4"/>
+        </property>
+        <property name="inddiff4" type="string">
+            <column name="inddiff4"/>
+        </property>
+        <property name="th5" type="string">
+            <column name="th5"/>
+        </property>
+        <property name="inddiff5" type="string">
+            <column name="inddiff5"/>
+        </property>
+        <property name="th6" type="string">
+            <column name="th6"/>
+        </property>
+        <property name="inddiff6" type="string">
+            <column name="inddiff6"/>
+        </property>
+        <property name="th7" type="string">
+            <column name="th7"/>
+        </property>
+        <property name="inddiff7" type="string">
+            <column name="inddiff7"/>
+        </property>
+        <property name="th8" type="string">
+            <column name="th8"/>
+        </property>
+        <property name="inddiff8" type="string">
+            <column name="inddiff8"/>
+        </property>
+        <property name="th9" type="string">
+            <column name="th9"/>
+        </property>
+        <property name="inddiff9" type="string">
+            <column name="inddiff9"/>
+        </property>
+        <property name="th10" type="string">
+            <column name="th10"/>
+        </property>
+        <property name="inddiff10" type="string">
+            <column name="inddiff10"/>
+        </property>
+        <property name="th11" type="string">
+            <column name="th11"/>
+        </property>
+        <property name="inddiff11" type="string">
+            <column name="inddiff11"/>
+        </property>
+        <property name="th12" type="string">
+            <column name="th12"/>
+        </property>
+        <property name="inddiff12" type="string">
+            <column name="inddiff12"/>
+        </property>
+        <property name="th13" type="string">
+            <column name="th13"/>
+        </property>
+        <property name="inddiff13" type="string">
+            <column name="inddiff13"/>
+        </property>
+        <property name="th14" type="string">
+            <column name="th14"/>
+        </property>
+        <property name="inddiff14" type="string">
+            <column name="inddiff14"/>
+        </property>
+        <property name="th15" type="string">
+            <column name="th15"/>
+        </property>
+        <property name="inddiff15" type="string">
+            <column name="inddiff15"/>
+        </property>
+        <property name="th16" type="string">
+            <column name="th16"/>
+        </property>
+        <property name="inddiff16" type="string">
+            <column name="inddiff16"/>
+        </property>
+        <property name="th17" type="string">
+            <column name="th17"/>
+        </property>
+        <property name="inddiff17" type="string">
+            <column name="inddiff17"/>
+        </property>
+        <property name="th18" type="string">
+            <column name="th18"/>
+        </property>
+        <property name="inddiff18" type="string">
+            <column name="inddiff18"/>
+        </property>
+        <property name="th19" type="string">
+            <column name="th19"/>
+        </property>
+        <property name="inddiff19" type="string">
+            <column name="inddiff19"/>
+        </property>
+        <property name="th20" type="string">
+            <column name="th20"/>
+        </property>
+        <property name="inddiff20" type="string">
+            <column name="inddiff20"/>
+        </property>
+        <property name="th21" type="string">
+            <column name="th21"/>
+        </property>
+        <property name="inddiff21" type="string">
+            <column name="inddiff21"/>
+        </property>
+        <property name="th22" type="string">
+            <column name="th22"/>
+        </property>
+        <property name="inddiff22" type="string">
+            <column name="inddiff22"/>
+        </property>
+        <property name="th23" type="string">
+            <column name="th23"/>
+        </property>
+        <property name="inddiff23" type="string">
+            <column name="inddiff23"/>
+        </property>
+        <property name="th24" type="string">
+            <column name="th24"/>
+        </property>
+        <property name="inddiff24" type="string">
+            <column name="inddiff24"/>
+        </property>
+        <property name="th25" type="string">
+            <column name="th25"/>
+        </property>
+        <property name="inddiff25" type="string">
+            <column name="inddiff25"/>
+        </property>
+        <property name="th26" type="string">
+            <column name="th26"/>
+        </property>
+        <property name="inddiff26" type="string">
+            <column name="inddiff26"/>
+        </property>
+        <property name="th27" type="string">
+            <column name="th27"/>
+        </property>
+        <property name="inddiff27" type="string">
+            <column name="inddiff27"/>
+        </property>
+        <property name="th28" type="string">
+            <column name="th28"/>
+        </property>
+        <property name="inddiff28" type="string">
+            <column name="inddiff28"/>
+        </property>
+        <property name="th29" type="string">
+            <column name="th29"/>
+        </property>
+        <property name="inddiff29" type="string">
+            <column name="inddiff29"/>
+        </property>
+        <property name="th30" type="string">
+            <column name="th30"/>
+        </property>
+        <property name="inddiff30" type="string">
+            <column name="inddiff30"/>
+        </property>
+        <property name="th31" type="string">
+            <column name="th31"/>
+        </property>
+        <property name="inddiff31" type="string">
+            <column name="inddiff31"/>
+        </property>
+        <property name="th32" type="string">
+            <column name="th32"/>
+        </property>
+        <property name="inddiff32" type="string">
+            <column name="inddiff32"/>
+        </property>
+        <property name="th33" type="string">
+            <column name="th33"/>
+        </property>
+        <property name="inddiff33" type="string">
+            <column name="inddiff33"/>
+        </property>
+        <property name="th34" type="string">
+            <column name="th34"/>
+        </property>
+        <property name="inddiff34" type="string">
+            <column name="inddiff34"/>
+        </property>
+        <property name="th35" type="string">
+            <column name="th35"/>
+        </property>
+        <property name="inddiff35" type="string">
+            <column name="inddiff35"/>
+        </property>
+        <property name="th36" type="string">
+            <column name="th36"/>
+        </property>
+        <property name="inddiff36" type="string">
+            <column name="inddiff36"/>
+        </property>
+        <property name="th37" type="string">
+            <column name="th37"/>
+        </property>
+        <property name="inddiff37" type="string">
+            <column name="inddiff37"/>
+        </property>
+        <property name="th38" type="string">
+            <column name="th38"/>
+        </property>
+        <property name="inddiff38" type="string">
+            <column name="inddiff38"/>
+        </property>
+        <property name="th39" type="string">
+            <column name="th39"/>
+        </property>
+        <property name="inddiff39" type="string">
+            <column name="inddiff39"/>
+        </property>
+        <property name="th40" type="string">
+            <column name="th40"/>
+        </property>
+        <property name="inddiff40" type="string">
+            <column name="inddiff40"/>
+        </property>
+        <set fetch="select" inverse="true" lazy="true" name="TAvancements" table="t_avancement">
+            <key>
+                <column name="tsalaire_id"/>
+            </key>
+            <one-to-many class="com.rahma.AvEchelon.Entity.TAvancement"/>
+        </set>
+    </class>
+</hibernate-mapping>

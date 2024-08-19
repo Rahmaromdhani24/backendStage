@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generated Jun 13, 2024, 2:26:22 AM by Hibernate Tools 5.6.7.Final --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class catalog="phpmyadmin" name="com.rahma.AvEchelon.Entity.PmaPdfPages" optimistic-lock="none" table="pma__pdf_pages">
+        <id name="pageNr" type="java.lang.Integer">
+            <column name="page_nr"/>
+            <generator class="identity"/>
+        </id>
+        <property name="dbName" type="string">
+            <column length="64" name="db_name" not-null="true"/>
+        </property>
+        <property name="pageDescr" type="string">
+            <column length="50" name="page_descr" not-null="true"/>
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generated Jun 13, 2024, 2:26:22 AM by Hibernate Tools 5.6.7.Final --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class catalog="phpmyadmin" name="com.rahma.AvEchelon.Entity.PmaTableCoords" optimistic-lock="none" table="pma__table_coords">
+        <composite-id class="com.rahma.AvEchelon.Entity.PmaTableCoordsId" name="id">
+            <key-property name="dbName" type="string">
+                <column length="64" name="db_name"/>
+            </key-property>
+            <key-property name="tableName" type="string">
+                <column length="64" name="table_name"/>
+            </key-property>
+            <key-property name="pdfPageNumber" type="int">
+                <column name="pdf_page_number"/>
+            </key-property>
+        </composite-id>
+        <property name="x" type="float">
+            <column name="x" not-null="true" precision="12" scale="0"/>
+        </property>
+        <property name="y" type="float">
+            <column name="y" not-null="true" precision="12" scale="0"/>
+        </property>
+    </class>
+</hibernate-mapping>

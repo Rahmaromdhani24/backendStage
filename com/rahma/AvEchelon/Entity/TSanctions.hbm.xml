@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generated Jun 13, 2024, 2:26:22 AM by Hibernate Tools 5.6.7.Final --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class catalog="stipdb" name="com.rahma.AvEchelon.Entity.TSanctions" optimistic-lock="none" table="t_sanctions">
+        <id name="id" type="java.lang.Integer">
+            <column name="ID"/>
+            <generator class="identity"/>
+        </id>
+        <property name="mle" type="string">
+            <column name="Mle" not-null="true"/>
+        </property>
+        <property name="sanction" type="string">
+            <column name="Sanction" not-null="true"/>
+        </property>
+        <property name="DDebut" type="date">
+            <column length="10" name="D_Debut" not-null="true"/>
+        </property>
+        <property name="duree" type="java.lang.Integer">
+            <column name="Duree"/>
+        </property>
+        <property name="DFin" type="date">
+            <column length="10" name="D_Fin"/>
+        </property>
+        <property name="motif" type="string">
+            <column length="65535" name="Motif" not-null="true"/>
+        </property>
+        <property name="ref" type="string">
+            <column name="Ref"/>
+        </property>
+        <property name="dateRef" type="date">
+            <column length="10" name="Date_ref"/>
+        </property>
+    </class>
+</hibernate-mapping>

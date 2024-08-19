@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generated Jun 13, 2024, 2:26:22 AM by Hibernate Tools 5.6.7.Final --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class catalog="phpmyadmin" name="com.rahma.AvEchelon.Entity.PmaExportTemplates" optimistic-lock="none" table="pma__export_templates">
+        <id name="id" type="java.lang.Integer">
+            <column name="id"/>
+            <generator class="identity"/>
+        </id>
+        <property name="username" type="string">
+            <column length="64" name="username" not-null="true"/>
+        </property>
+        <property name="exportType" type="string">
+            <column length="10" name="export_type" not-null="true"/>
+        </property>
+        <property name="templateName" type="string">
+            <column length="64" name="template_name" not-null="true"/>
+        </property>
+        <property name="templateData" type="string">
+            <column length="65535" name="template_data" not-null="true"/>
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generated Jun 13, 2024, 2:26:22 AM by Hibernate Tools 5.6.7.Final --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class catalog="phpmyadmin" name="com.rahma.AvEchelon.Entity.PmaNavigationhiding" optimistic-lock="none" table="pma__navigationhiding">
+        <composite-id class="com.rahma.AvEchelon.Entity.PmaNavigationhidingId" name="id">
+            <key-property name="username" type="string">
+                <column length="64" name="username"/>
+            </key-property>
+            <key-property name="itemName" type="string">
+                <column length="64" name="item_name"/>
+            </key-property>
+            <key-property name="itemType" type="string">
+                <column length="64" name="item_type"/>
+            </key-property>
+            <key-property name="dbName" type="string">
+                <column length="64" name="db_name"/>
+            </key-property>
+            <key-property name="tableName" type="string">
+                <column length="64" name="table_name"/>
+            </key-property>
+        </composite-id>
+    </class>
+</hibernate-mapping>

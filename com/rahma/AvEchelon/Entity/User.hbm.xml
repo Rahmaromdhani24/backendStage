@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generated Jun 13, 2024, 2:26:22 AM by Hibernate Tools 5.6.7.Final --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class catalog="mysql" name="com.rahma.AvEchelon.Entity.User" optimistic-lock="none" table="user">
+        <composite-id class="com.rahma.AvEchelon.Entity.UserId" name="id">
+            <key-property name="host" type="string">
+                <column length="60" name="Host"/>
+            </key-property>
+            <key-property name="user" type="string">
+                <column length="80" name="User"/>
+            </key-property>
+            <key-property name="password" type="string">
+                <column name="Password"/>
+            </key-property>
+            <key-property name="selectPriv" type="string">
+                <column length="1" name="Select_priv"/>
+            </key-property>
+            <key-property name="insertPriv" type="string">
+                <column length="1" name="Insert_priv"/>
+            </key-property>
+            <key-property name="updatePriv" type="string">
+                <column length="1" name="Update_priv"/>
+            </key-property>
+            <key-property name="deletePriv" type="string">
+                <column length="1" name="Delete_priv"/>
+            </key-property>
+            <key-property name="createPriv" type="string">
+                <column length="1" name="Create_priv"/>
+            </key-property>
+            <key-property name="dropPriv" type="string">
+                <column length="1" name="Drop_priv"/>
+            </key-property>
+            <key-property name="reloadPriv" type="string">
+                <column length="1" name="Reload_priv"/>
+            </key-property>
+            <key-property name="shutdownPriv" type="string">
+                <column length="1" name="Shutdown_priv"/>
+            </key-property>
+            <key-property name="processPriv" type="string">
+                <column length="1" name="Process_priv"/>
+            </key-property>
+            <key-property name="filePriv" type="string">
+                <column length="1" name="File_priv"/>
+            </key-property>
+            <key-property name="grantPriv" type="string">
+                <column length="1" name="Grant_priv"/>
+            </key-property>
+            <key-property name="referencesPriv" type="string">
+                <column length="1" name="References_priv"/>
+            </key-property>
+            <key-property name="indexPriv" type="string">
+                <column length="1" name="Index_priv"/>
+            </key-property>
+            <key-property name="alterPriv" type="string">
+                <column length="1" name="Alter_priv"/>
+            </key-property>
+            <key-property name="showDbPriv" type="string">
+                <column length="1" name="Show_db_priv"/>
+            </key-property>
+            <key-property name="superPriv" type="string">
+                <column length="1" name="Super_priv"/>
+            </key-property>
+            <key-property name="createTmpTablePriv" type="string">
+                <column length="1" name="Create_tmp_table_priv"/>
+            </key-property>
+            <key-property name="lockTablesPriv" type="string">
+                <column length="1" name="Lock_tables_priv"/>
+            </key-property>
+            <key-property name="executePriv" type="string">
+                <column length="1" name="Execute_priv"/>
+            </key-property>
+            <key-property name="replSlavePriv" type="string">
+                <column length="1" name="Repl_slave_priv"/>
+            </key-property>
+            <key-property name="replClientPriv" type="string">
+                <column length="1" name="Repl_client_priv"/>
+            </key-property>
+            <key-property name="createViewPriv" type="string">
+                <column length="1" name="Create_view_priv"/>
+            </key-property>
+            <key-property name="showViewPriv" type="string">
+                <column length="1" name="Show_view_priv"/>
+            </key-property>
+            <key-property name="createRoutinePriv" type="string">
+                <column length="1" name="Create_routine_priv"/>
+            </key-property>
+            <key-property name="alterRoutinePriv" type="string">
+                <column length="1" name="Alter_routine_priv"/>
+            </key-property>
+            <key-property name="createUserPriv" type="string">
+                <column length="1" name="Create_user_priv"/>
+            </key-property>
+            <key-property name="eventPriv" type="string">
+                <column length="1" name="Event_priv"/>
+            </key-property>
+            <key-property name="triggerPriv" type="string">
+                <column length="1" name="Trigger_priv"/>
+            </key-property>
+            <key-property name="createTablespacePriv" type="string">
+                <column length="1" name="Create_tablespace_priv"/>
+            </key-property>
+            <key-property name="deleteHistoryPriv" type="string">
+                <column length="1" name="Delete_history_priv"/>
+            </key-property>
+            <key-property name="sslType" type="string">
+                <column length="9" name="ssl_type"/>
+            </key-property>
+            <key-property name="sslCipher" type="string">
+                <column name="ssl_cipher"/>
+            </key-property>
+            <key-property name="x509Issuer" type="string">
+                <column name="x509_issuer"/>
+            </key-property>
+            <key-property name="x509Subject" type="string">
+                <column name="x509_subject"/>
+            </key-property>
+            <key-property name="maxQuestions" type="long">
+                <column name="max_questions"/>
+            </key-property>
+            <key-property name="maxUpdates" type="long">
+                <column name="max_updates"/>
+            </key-property>
+            <key-property name="maxConnections" type="long">
+                <column name="max_connections"/>
+            </key-property>
+            <key-property name="maxUserConnections" type="long">
+                <column name="max_user_connections"/>
+            </key-property>
+            <key-property name="plugin" type="string">
+                <column name="plugin"/>
+            </key-property>
+            <key-property name="authenticationString" type="string">
+                <column name="authentication_string"/>
+            </key-property>
+            <key-property name="passwordExpired" type="string">
+                <column length="1" name="password_expired"/>
+            </key-property>
+            <key-property name="isRole" type="string">
+                <column length="1" name="is_role"/>
+            </key-property>
+            <key-property name="defaultRole" type="string">
+                <column name="default_role"/>
+            </key-property>
+            <key-property name="maxStatementTime" type="big_decimal">
+                <column name="max_statement_time" precision="12" scale="6"/>
+            </key-property>
+        </composite-id>
+    </class>
+</hibernate-mapping>

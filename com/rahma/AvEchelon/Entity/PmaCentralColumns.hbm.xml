@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generated Jun 13, 2024, 2:26:22 AM by Hibernate Tools 5.6.7.Final --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class catalog="phpmyadmin" name="com.rahma.AvEchelon.Entity.PmaCentralColumns" optimistic-lock="none" table="pma__central_columns">
+        <composite-id class="com.rahma.AvEchelon.Entity.PmaCentralColumnsId" name="id">
+            <key-property name="dbName" type="string">
+                <column length="64" name="db_name"/>
+            </key-property>
+            <key-property name="colName" type="string">
+                <column length="64" name="col_name"/>
+            </key-property>
+        </composite-id>
+        <property name="colType" type="string">
+            <column length="64" name="col_type" not-null="true"/>
+        </property>
+        <property name="colLength" type="string">
+            <column length="65535" name="col_length"/>
+        </property>
+        <property name="colCollation" type="string">
+            <column length="64" name="col_collation" not-null="true"/>
+        </property>
+        <property name="colIsNull" type="boolean">
+            <column name="col_isNull" not-null="true"/>
+        </property>
+        <property name="colExtra" type="string">
+            <column name="col_extra"/>
+        </property>
+        <property name="colDefault" type="string">
+            <column length="65535" name="col_default"/>
+        </property>
+    </class>
+</hibernate-mapping>

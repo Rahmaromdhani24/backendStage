@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generated Jun 13, 2024, 2:26:22 AM by Hibernate Tools 5.6.7.Final --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class catalog="phpmyadmin" name="com.rahma.AvEchelon.Entity.PmaColumnInfo" optimistic-lock="none" table="pma__column_info">
+        <id name="id" type="java.lang.Integer">
+            <column name="id"/>
+            <generator class="identity"/>
+        </id>
+        <property name="dbName" type="string">
+            <column length="64" name="db_name" not-null="true"/>
+        </property>
+        <property name="tableName" type="string">
+            <column length="64" name="table_name" not-null="true"/>
+        </property>
+        <property name="columnName" type="string">
+            <column length="64" name="column_name" not-null="true"/>
+        </property>
+        <property name="comment" type="string">
+            <column name="comment" not-null="true"/>
+        </property>
+        <property name="mimetype" type="string">
+            <column name="mimetype" not-null="true"/>
+        </property>
+        <property name="transformation" type="string">
+            <column name="transformation" not-null="true"/>
+        </property>
+        <property name="transformationOptions" type="string">
+            <column name="transformation_options" not-null="true"/>
+        </property>
+        <property name="inputTransformation" type="string">
+            <column name="input_transformation" not-null="true"/>
+        </property>
+        <property name="inputTransformationOptions" type="string">
+            <column name="input_transformation_options" not-null="true"/>
+        </property>
+    </class>
+</hibernate-mapping>

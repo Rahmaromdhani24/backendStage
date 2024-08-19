@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generated Jun 13, 2024, 2:26:22 AM by Hibernate Tools 5.6.7.Final --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class catalog="stipdb" name="com.rahma.AvEchelon.Entity.TContratParent" optimistic-lock="none" table="t_contrat_parent">
+        <id name="id" type="java.lang.Integer">
+            <column name="ID"/>
+            <generator class="identity"/>
+        </id>
+        <property name="mle" type="string">
+            <column length="225" name="Mle" not-null="true"/>
+        </property>
+        <property name="nom" type="string">
+            <column name="Nom" not-null="true"/>
+        </property>
+        <property name="dateEntreeEtab" type="date">
+            <column length="10" name="Date_Entree_Etab" not-null="true"/>
+        </property>
+        <property name="type" type="string">
+            <column name="Type" not-null="true"/>
+        </property>
+        <property name="active" type="int">
+            <column name="Active" not-null="true"/>
+        </property>
+        <set fetch="select" inverse="true" lazy="true" name="TPersonnelses" table="t_personnels">
+            <key>
+                <column name="tcontrat_parent_id" unique="true"/>
+            </key>
+            <one-to-many class="com.rahma.AvEchelon.Entity.TPersonnels"/>
+        </set>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generated Jun 13, 2024, 2:26:22 AM by Hibernate Tools 5.6.7.Final --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class catalog="phpmyadmin" name="com.rahma.AvEchelon.Entity.PmaUsergroups" optimistic-lock="none" table="pma__usergroups">
+        <composite-id class="com.rahma.AvEchelon.Entity.PmaUsergroupsId" name="id">
+            <key-property name="usergroup" type="string">
+                <column length="64" name="usergroup"/>
+            </key-property>
+            <key-property name="tab" type="string">
+                <column length="64" name="tab"/>
+            </key-property>
+            <key-property name="allowed" type="char">
+                <column length="1" name="allowed"/>
+            </key-property>
+        </composite-id>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generated Jun 13, 2024, 2:26:22 AM by Hibernate Tools 5.6.7.Final --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class catalog="phpmyadmin" name="com.rahma.AvEchelon.Entity.PmaTracking" optimistic-lock="none" table="pma__tracking">
+        <composite-id class="com.rahma.AvEchelon.Entity.PmaTrackingId" name="id">
+            <key-property name="dbName" type="string">
+                <column length="64" name="db_name"/>
+            </key-property>
+            <key-property name="tableName" type="string">
+                <column length="64" name="table_name"/>
+            </key-property>
+            <key-property name="version" type="int">
+                <column name="version"/>
+            </key-property>
+        </composite-id>
+        <property name="dateCreated" type="timestamp">
+            <column length="19" name="date_created" not-null="true"/>
+        </property>
+        <property name="dateUpdated" type="timestamp">
+            <column length="19" name="date_updated" not-null="true"/>
+        </property>
+        <property name="schemaSnapshot" type="string">
+            <column length="65535" name="schema_snapshot" not-null="true"/>
+        </property>
+        <property name="schemaSql" type="string">
+            <column length="65535" name="schema_sql"/>
+        </property>
+        <property name="dataSql" type="string">
+            <column name="data_sql"/>
+        </property>
+        <property name="tracking" type="string">
+            <column length="188" name="tracking"/>
+        </property>
+        <property name="trackingActive" type="int">
+            <column name="tracking_active" not-null="true"/>
+        </property>
+    </class>
+</hibernate-mapping>

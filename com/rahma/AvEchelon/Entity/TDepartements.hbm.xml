@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generated Jun 13, 2024, 2:26:22 AM by Hibernate Tools 5.6.7.Final --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class catalog="stipdb" name="com.rahma.AvEchelon.Entity.TDepartements" optimistic-lock="none" table="t_departements">
+        <id name="id" type="java.lang.Integer">
+            <column name="ID"/>
+            <generator class="identity"/>
+        </id>
+        <property name="nomDep" type="string">
+            <column name="Nom_Dep" not-null="true"/>
+        </property>
+        <property name="mleChefDep" type="string">
+            <column name="Mle_Chef_Dep"/>
+        </property>
+        <property name="idDepSup" type="string">
+            <column name="ID_dep_Sup"/>
+        </property>
+        <property name="type" type="string">
+            <column name="Type" not-null="true"/>
+        </property>
+        <set fetch="select" inverse="true" lazy="true" name="TPosteses" table="t_postes">
+            <key>
+                <column name="id_dep"/>
+                <column name="Nom_Dep" not-null="true"/>
+            </key>
+            <one-to-many class="com.rahma.AvEchelon.Entity.TPostes"/>
+        </set>
+    </class>
+</hibernate-mapping>

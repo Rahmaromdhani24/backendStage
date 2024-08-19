@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generated Jun 13, 2024, 2:26:22 AM by Hibernate Tools 5.6.7.Final --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class catalog="stipdb" name="com.rahma.AvEchelon.Entity.THistoriqueAv" optimistic-lock="none" table="t_historique_av">
+        <id name="id" type="java.lang.Integer">
+            <column name="ID"/>
+            <generator class="identity"/>
+        </id>
+        <property name="mle" type="string">
+            <column name="MLE" not-null="true"/>
+        </property>
+        <property name="nom" type="string">
+            <column name="NOM" not-null="true"/>
+        </property>
+        <property name="qualification" type="string">
+            <column name="QUALIFICATION"/>
+        </property>
+        <property name="catA" type="string">
+            <column name="CAT_A"/>
+        </property>
+        <property name="catN" type="string">
+            <column name="CAT_N"/>
+        </property>
+        <property name="SCatA" type="string">
+            <column name="S_CAT_A"/>
+        </property>
+        <property name="SCatN" type="string">
+            <column name="S_CAT_N"/>
+        </property>
+        <property name="echA" type="string">
+            <column name="ECH_A"/>
+        </property>
+        <property name="echN" type="string">
+            <column name="ECH_N"/>
+        </property>
+        <property name="sbaseA" type="string">
+            <column name="SBASE_A"/>
+        </property>
+        <property name="sbaseN" type="string">
+            <column name="SBASE_N"/>
+        </property>
+        <property name="thA" type="string">
+            <column name="TH_A"/>
+        </property>
+        <property name="thN" type="string">
+            <column name="TH_N"/>
+        </property>
+        <property name="indDiffA" type="string">
+            <column name="IND_DIFF_A"/>
+        </property>
+        <property name="indDiffN" type="string">
+            <column name="IND_DIFF_N"/>
+        </property>
+        <property name="DEffetA" type="date">
+            <column length="10" name="D_EFFET_A" not-null="true"/>
+        </property>
+        <property name="DEffetN" type="date">
+            <column length="10" name="D_EFFET_N" not-null="true"/>
+        </property>
+        <property name="DPAvA" type="date">
+            <column length="10" name="D_P_AV_A" not-null="true"/>
+        </property>
+        <property name="DPAvN" type="date">
+            <column length="10" name="D_P_AV_N" not-null="true"/>
+        </property>
+        <property name="active" type="int">
+            <column name="Active" not-null="true"/>
+        </property>
+        <property name="observation" type="string">
+            <column name="OBSERVATION"/>
+        </property>
+        <property name="note" type="float">
+            <column name="note" not-null="true" precision="12" scale="0"/>
+        </property>
+        <property name="san1" type="string">
+            <column name="San1"/>
+        </property>
+        <property name="san2" type="string">
+            <column name="San2"/>
+        </property>
+        <set fetch="select" inverse="true" lazy="true" name="TAvancements" table="t_avancement">
+            <key>
+                <column name="thistorique_av_id"/>
+            </key>
+            <one-to-many class="com.rahma.AvEchelon.Entity.TAvancement"/>
+        </set>
+    </class>
+</hibernate-mapping>

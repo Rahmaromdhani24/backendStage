@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generated Jun 13, 2024, 2:26:22 AM by Hibernate Tools 5.6.7.Final --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class catalog="stipdb" name="com.rahma.AvEchelon.Entity.TPostes" optimistic-lock="none" table="t_postes">
+        <composite-id class="com.rahma.AvEchelon.Entity.TPostesId" name="id">
+            <key-property name="id" type="int">
+                <column name="ID"/>
+            </key-property>
+            <key-property name="mle" type="string">
+                <column name="Mle"/>
+            </key-property>
+        </composite-id>
+        <many-to-one class="com.rahma.AvEchelon.Entity.TDepartements" fetch="select" name="TDepartements">
+            <column name="id_dep"/>
+            <column name="Nom_Dep" not-null="true"/>
+        </many-to-one>
+        <property name="fonction" type="string">
+            <column name="Fonction"/>
+        </property>
+        <property name="position" type="string">
+            <column name="position"/>
+        </property>
+        <property name="qualification" type="string">
+            <column name="Qualification" not-null="true"/>
+        </property>
+        <property name="college" type="string">
+            <column name="College" not-null="true"/>
+        </property>
+        <property name="active" type="string">
+            <column name="Active"/>
+        </property>
+        <property name="datePoste" type="date">
+            <column length="10" name="Date_Poste" not-null="true"/>
+        </property>
+        <property name="idService" type="string">
+            <column name="Id_Service"/>
+        </property>
+        <property name="nomService" type="string">
+            <column name="Nom_Service"/>
+        </property>
+        <property name="ref" type="string">
+            <column name="Ref" not-null="true"/>
+        </property>
+    </class>
+</hibernate-mapping>

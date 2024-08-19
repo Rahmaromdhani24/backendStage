@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generated Jun 13, 2024, 2:26:22 AM by Hibernate Tools 5.6.7.Final --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class catalog="stipdb" name="com.rahma.AvEchelon.Entity.TContratDetails" optimistic-lock="none" table="t_contrat_details">
+        <id name="id" type="java.lang.Integer">
+            <column name="ID"/>
+            <generator class="identity"/>
+        </id>
+        <property name="idContratParent" type="int">
+            <column name="ID_Contrat_parent" not-null="true"/>
+        </property>
+        <property name="dateD" type="date">
+            <column length="10" name="Date_D" not-null="true"/>
+        </property>
+        <property name="dateF" type="date">
+            <column length="10" name="Date_F" not-null="true"/>
+        </property>
+        <property name="jours" type="string">
+            <column name="Jours" not-null="true"/>
+        </property>
+        <property name="mois" type="string">
+            <column name="Mois"/>
+        </property>
+        <property name="annee" type="string">
+            <column name="Annee"/>
+        </property>
+        <property name="qualification" type="string">
+            <column name="Qualification" not-null="true"/>
+        </property>
+        <property name="type" type="string">
+            <column name="Type" not-null="true"/>
+        </property>
+        <property name="ref" type="string">
+            <column name="Ref"/>
+        </property>
+        <property name="dateRef" type="date">
+            <column length="10" name="Date_Ref"/>
+        </property>
+        <property name="cddFile" type="string">
+            <column name="CDD_File"/>
+        </property>
+        <property name="idAv" type="java.lang.Integer">
+            <column name="ID_AV"/>
+        </property>
+    </class>
+</hibernate-mapping>

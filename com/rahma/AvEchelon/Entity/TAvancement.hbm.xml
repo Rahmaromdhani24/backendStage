@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generated Jun 13, 2024, 2:26:22 AM by Hibernate Tools 5.6.7.Final --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class catalog="stipdb" name="com.rahma.AvEchelon.Entity.TAvancement" optimistic-lock="none" table="t_avancement">
+        <id name="id" type="java.lang.Integer">
+            <column name="ID"/>
+            <generator class="identity"/>
+        </id>
+        <many-to-one class="com.rahma.AvEchelon.Entity.THistoriqueAv" fetch="select" name="THistoriqueAv">
+            <column name="thistorique_av_id"/>
+        </many-to-one>
+        <many-to-one class="com.rahma.AvEchelon.Entity.TPersonnels" fetch="select" name="TPersonnels">
+            <column name="MLE" not-null="true"/>
+        </many-to-one>
+        <many-to-one class="com.rahma.AvEchelon.Entity.TSalaire" fetch="select" name="TSalaire">
+            <column name="tsalaire_id"/>
+        </many-to-one>
+        <property name="nom" type="string">
+            <column name="NOM" not-null="true"/>
+        </property>
+        <property name="qualification" type="string">
+            <column name="QUALIFICATION"/>
+        </property>
+        <property name="cat" type="string">
+            <column name="CAT"/>
+        </property>
+        <property name="SCat" type="string">
+            <column name="S_CAT"/>
+        </property>
+        <property name="ech" type="string">
+            <column name="ECH"/>
+        </property>
+        <property name="sbase" type="string">
+            <column name="SBASE"/>
+        </property>
+        <property name="th" type="string">
+            <column name="TH"/>
+        </property>
+        <property name="indDiff" type="string">
+            <column name="IND_DIFF"/>
+        </property>
+        <property name="DEffet" type="date">
+            <column length="10" name="D_EFFET" not-null="true"/>
+        </property>
+        <property name="DPAv" type="date">
+            <column length="10" name="D_P_AV"/>
+        </property>
+        <property name="observation" type="string">
+            <column name="OBSERVATION"/>
+        </property>
+        <property name="active" type="int">
+            <column name="Active" not-null="true"/>
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generated Jun 13, 2024, 2:26:22 AM by Hibernate Tools 5.6.7.Final --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class catalog="stipdb" name="com.rahma.AvEchelon.Entity.TPersonnels" optimistic-lock="none" table="t_personnels">
+        <composite-id class="com.rahma.AvEchelon.Entity.TPersonnelsId" name="id">
+            <key-property name="id" type="int">
+                <column name="ID"/>
+            </key-property>
+            <key-property name="mle" type="string">
+                <column name="Mle"/>
+            </key-property>
+        </composite-id>
+        <many-to-one class="com.rahma.AvEchelon.Entity.TContratParent" fetch="select" name="TContratParent">
+            <column name="tcontrat_parent_id" unique="true"/>
+        </many-to-one>
+        <property name="nom" type="string">
+            <column name="Nom" not-null="true"/>
+        </property>
+        <property name="prenom" type="string">
+            <column name="Prenom" not-null="true"/>
+        </property>
+        <property name="nomP" type="string">
+            <column name="Nom_P"/>
+        </property>
+        <property name="nomM" type="string">
+            <column name="Nom_M"/>
+        </property>
+        <property name="dateN" type="string">
+            <column name="Date_N"/>
+        </property>
+        <property name="lieuN" type="string">
+            <column name="Lieu_N"/>
+        </property>
+        <property name="cin" type="string">
+            <column name="CIN"/>
+        </property>
+        <property name="cpostal" type="string">
+            <column name="cpostal"/>
+        </property>
+        <property name="dateCin" type="date">
+            <column length="10" name="Date_CIN"/>
+        </property>
+        <property name="numCnss" type="string">
+            <column name="Num_CNSS"/>
+        </property>
+        <property name="adresse" type="string">
+            <column name="Adresse"/>
+        </property>
+        <property name="ville" type="string">
+            <column name="Ville"/>
+        </property>
+        <property name="SF" type="string">
+            <column name="S_F"/>
+        </property>
+        <property name="sexe" type="string">
+            <column name="Sexe"/>
+        </property>
+        <property name="dateEntreEtab" type="date">
+            <column length="10" name="Date_Entre_Etab"/>
+        </property>
+        <property name="dateAnc" type="date">
+            <column length="10" name="Date_Anc"/>
+        </property>
+        <property name="dateSortieEtab" type="date">
+            <column length="10" name="Date_Sortie_Etab"/>
+        </property>
+        <property name="motifSortie" type="string">
+            <column name="Motif_Sortie"/>
+        </property>
+        <property name="tel" type="string">
+            <column name="Tel"/>
+        </property>
+        <set fetch="select" inverse="true" lazy="true" name="TAvancements" table="t_avancement">
+            <key>
+                <column name="MLE" not-null="true"/>
+            </key>
+            <one-to-many class="com.rahma.AvEchelon.Entity.TAvancement"/>
+        </set>
+    </class>
+</hibernate-mapping>
